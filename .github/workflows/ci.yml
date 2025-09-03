@@ -22,11 +22,11 @@ jobs:
       working-directory: backend
       run: |
         go mod tidy
-        go build -v .
+        go build -v ./...
     
     - name: Test backend
       working-directory: backend
-      run: go test -v .
+      run: go test -v ./...
     
     - name: Set up Node.js
       uses: actions/setup-node@v4
