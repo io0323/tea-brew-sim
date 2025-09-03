@@ -40,6 +40,9 @@ jobs:
         cache: 'npm'
         cache-dependency-path: frontend/package-lock.json
     
+    - name: Ensure node_modules exists
+      run: mkdir -p frontend/node_modules
+    
     - name: Cache node modules
       uses: actions/cache@v3
       with:
