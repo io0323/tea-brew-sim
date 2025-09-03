@@ -48,6 +48,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-node-
         fail-on-cache-miss: false
+        continue-on-error: true
     
     - name: Install frontend dependencies
       run: |
