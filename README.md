@@ -10,14 +10,14 @@
 ## ディレクトリ構成
 ```
 frontend/   # Next.js + Tailwind CSS フロントエンド
-backend/    # Go (Gin) バックエンドAPI
+*.go        # Go (Gin) バックエンドAPI（ルートディレクトリ）
+go.mod      # Go モジュール定義
 ```
 
 ## 起動方法
 
 ### 1. バックエンドAPI（Go）
 ```sh
-cd backend
 # 依存解決（初回のみ）
 go mod tidy
 # サーバー起動
